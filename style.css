@@ -1,25 +1,31 @@
-section {
-    height: 1000px;
-    background-color: whitesmoke;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Sorts Mill Goudy', serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
 }
 
-.top {
-    width: 100%;
+body {
+    background-color: rgb(231, 233, 235);
     color: black;
-}
+    
+} 
 
-.bg-img {
-    background-image: url("https://images.unsplash.com/photo-1524261185784-f3d0c95e3fc4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGxhbmRzY2FwZXxlbnwwfHwwfHw%3D&w=1000&q=80");
-    min-height: 500px;
-    background-position:;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-}
-.navbar {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-    overflow: hidden;
-    background-color: rgb(216, 213, 213);
+header {
+    display: flex
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 20%;
+    border-bottom: 1px solid transparent; 
+
+
+
 }
