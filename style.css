@@ -5,4 +5,21 @@ section {
 
 .top {
     width: 100%;
+    color: black;
+}
+
+.bg-img {
+    background-image: url("https://images.unsplash.com/photo-1524261185784-f3d0c95e3fc4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGxhbmRzY2FwZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+    min-height: 500px;
+    background-position:;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.navbar {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+    overflow: hidden;
+    background-color: rgb(216, 213, 213);
 }
