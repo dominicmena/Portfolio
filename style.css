@@ -25,7 +25,37 @@ header {
     background: transparent;
     padding: 30px 20%;
     border-bottom: 1px solid transparent; 
-
-
+    transition: all .50s ease;
+}
+.logo {
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.navbar {
+    display: flex;
 
 }
+.navbar a {
+    color: black;
+    font-size: 17px;
+    font-weight: 800;
+    margin: 0 25px;
+    transition: all .50s ease;
+}
+.navbar a:hover {
+    color: rgb(134, 0, 0)
+}
+.navbar a.current {
+    color: rgb(134, 0, 0)
+}
+#menu-icon {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    z-index: 1000
+    margin-left: 25px;
+    display: none;
+}
+
