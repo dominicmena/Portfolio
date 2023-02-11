@@ -12,6 +12,18 @@ body {
     color: black;
     
 } 
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("https://i.imgur.com/WcOrAkL.jpeg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
 
 header {
     display: flex
@@ -57,5 +69,11 @@ header {
     z-index: 1000
     margin-left: 25px;
     display: none;
+}
+span {
+    color: maroon
+}
+section{
+    padding: 200px 15% 200px;
 }
 
