@@ -7,27 +7,14 @@
     scroll-behavior: smooth;
 }
 
-body {
+:root {
     background-color: rgb(231, 233, 235);
     color: black;
     
 } 
-.home{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background: url("https://i.imgur.com/WcOrAkL.jpeg");
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    justify-content: flex-start;
-
-
-}
-
 header {
-    display: flex
-    position: fixed;
+    display: flex;
+    position: relative;
     width: 100%;
     top: 0;
     right: 0;
@@ -35,9 +22,24 @@ header {
     z-index: 1000;
     justify-content: space-between;
     background: transparent;
-    padding: 30px 20%;
+    padding: 30px 10%;
     border-bottom: 1px solid transparent; 
     transition: all .50s ease;
+} 
+.home{
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/IMG_3804.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+
+}
+.slide {
+    margin-bottom: 20px;
 }
 .logo {
     color: black;
@@ -45,15 +47,51 @@ header {
     font-weight: 900;
     letter-spacing: 1px;
 }
+.one {
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 30px;
+    font-weight: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    background:rgb(231, 233, 235);
+}
+.two {
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 800;
+}
+.home-text h1 {
+    font-size: x-large;
+    font-weight: 600;
+    list-style: 1;
+    margin: 0 0 8px;
+    display: flex;
+    justify-content: center;
+}
+.home-text h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.home-text p {
+    color:rgb(231, 233, 235);
+    font-size: 30px;
+    margin-bottom: 50px;
+    
+}
 .navbar {
     display: flex;
-
+    overflow: hidden;
+    justify-content: center;
 }
 .navbar a {
     color: black;
     font-size: 17px;
     font-weight: 800;
-    margin: 0 25px;
+    margin: 0 10px;
     transition: all .50s ease;
 }
 .navbar a:hover {
@@ -62,18 +100,28 @@ header {
 .navbar a.current {
     color: rgb(134, 0, 0)
 }
+
 #menu-icon {
     font-size: 30px;
     color: black;
     cursor: pointer;
-    z-index: 1000
+    z-index: 1000;
     margin-left: 25px;
     display: none;
 }
 span {
-    color: maroon
+    color: maroon;
+}
+.black{
+    color: black;
 }
 section{
     padding: 200px 15% 200px;
+}
+.navbar {
+    background:rgb(231, 233, 235);
+    border-bottom: 3px solid black;
+    padding: 12px 5%;
+   
 }
 
