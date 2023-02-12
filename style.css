@@ -13,12 +13,14 @@
     
 } 
 
-.about {
+@media only screen and (min-width: 500px) { /*if the screen is bigger than 500px the below will kick in*/
+ .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     border-bottom: 3px solid black;
     gap: 1.5em; /* this makes the about section/div split into 2 columns */
+}
 }
 .about-img img{
     max-width: 550px;
@@ -33,12 +35,14 @@
 .swiper-slide img {
     width: 100%;
 }
-.about-txt h2 {
-    font-size: 25px;
-    line-height: 2;
-}
 .projects {
-    border-bottom: 10px solid black;
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: flex-start;
     
 }
 .projects-txt h2 {
@@ -95,6 +99,10 @@
 .swiper .swiper-pagination-bullet-active{
     background:rgb(134, 0, 0)
 }
+.about-txt h2 {
+    font-size: 28px;
+    line-height: 2;
+}
 .about-txt h4 {
     font-size: 20px;
     line-height: 1; 
@@ -116,10 +124,26 @@ header {
     z-index: 1000;
     justify-content: space-between;
     background: transparent;
+    padding: 20px 25%;
+    border-bottom: 1px solid transparent; 
+    transition: all .50s ease;
+} 
+@media (min-width:500px){
+header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+    background: transparent;
     padding: 20px 2%;
     border-bottom: 1px solid transparent; 
     transition: all .50s ease;
 } 
+}
 .skills {
     background-image: url(/img/img688.jpg);
     position:relative;
@@ -129,7 +153,7 @@ header {
     background-position: center;
     align-items: center;
     justify-content: flex-start;
-    border-bottom: 3px solid black;
+   
 }
 .skills h2 {
     position: relative;
@@ -162,7 +186,6 @@ header {
     align-items: center;
     justify-content: flex-start;
     display: flex;
-    border-bottom: 3px solid black;
 }
 .slide {
     margin-bottom: 20px;
@@ -226,15 +249,15 @@ header {
 .navbar a.current {
     color: rgb(134, 0, 0)
 }
-
 #menu-icon {
-    font-size: 30px;
-    color: black;
+    font-size: 35px;
+    color:black;
+    z-index: 10001;
     cursor: pointer;
-    z-index: 1000;
     margin-left: 25px;
-    display: none;
+    display: block;
 }
+
 span {
     color: maroon;
 }
@@ -249,24 +272,30 @@ section{
     border-bottom: 3px solid black;
     padding: 10px 5%;
    
+
 }
 .contact {
     background-image: url(/img/img662.jpg);
     position:relative;
-    height:90vh;
+    height:20vh;
     width: 200%;
-    margin-left: -90px;
+    margin-left: -102px;
     background-size: cover;
     background-position: center;
     /* align-items: center; */
     justify-content: flex-start;
 }
-.contact-txt, .contact-text h3 {
+.contact-txt{
     position: relative;
-    margin: 0;
+    margin-left: 30px;
     /* border-radius:4px; */
     padding:8px;
     overflow-wrap: break-word;
-    font-size: 20px;
+    font-size: 15px;
 }
+.contact-txt h2 {
+    margin-left: 40px;
+    font-size: 30px;
+}
+
 
