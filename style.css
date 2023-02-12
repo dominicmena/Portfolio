@@ -1,134 +1,136 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Sorts Mill Goudy', serif;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Sorts Mill Goudy", serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
 }
 
 :root {
-    background-color: rgb(231, 233, 235);
-    color: black;
-    
-} 
+  background-color: rgb(231, 233, 235);
+  color: black;
+}
 
-@media only screen and (min-width: 500px) { /*if the screen is bigger than 500px the below will kick in*/
- .about {
+@media only screen and (min-width: 500px) {
+  /*if the screen is bigger than 500px the below will kick in*/
+  .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5em; /* this makes the about section/div split into 2 columns */
+  }
 }
-}
-.about-img img{
-    max-width: 550px;
-    height: auto;
-    width: 100%;
-    border-radius: 8px; /*gives the image a rounded look and sizes accordingly*/
+.about-img img {
+  max-width: 550px;
+  height: auto;
+  width: 100%;
+  border-radius: 8px; /*gives the image a rounded look and sizes accordingly*/
 }
 .swiper {
-    width:100%; 
- height: fit-content;
+  width: 100%;
+  height: fit-content;
 }
 .swiper-slide img {
-    width: 100%;
+  width: 100%;
 }
 .projects {
-    position:relative;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    justify-content: flex-start;
-    
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 .projects-txt h2 {
-    position: relative;
-    margin: 0;
-    border-radius:400px;
-    padding:10px;
-    font-size: 32px;
+  position: relative;
+  margin: 0;
+  border-radius: 400px;
+  padding: 10px;
+  font-size: 32px;
 }
-.textOverImage{
-    background-image: url(/img/lotr.jpeg);
-    width: 200px;
-    height: 200px; /* make image large enough for text to fit */
-    display: inline-block;
-    background-size: cover;
-    border-radius: 4px;
-    margin: 50px;
-    position: relative;
-    cursor: pointer;
+.textOverImage {
+  background-image: url(/img/lotr.jpeg);
+  width: 200px;
+  height: 200px; /* make image large enough for text to fit */
+  display: inline-block;
+  background-size: cover;
+  border-radius: 4px;
+  margin: 50px;
+  position: relative;
+  cursor: pointer;
 }
-.textOverImage > input{
-    display: none;
+.textOverImage > input {
+  display: none;
 }
-.textOverImage > div, .textOverImage:hover > h2 {
-    position: absolute;
-    background-color:black;
-    color:rgb(231, 233, 235);
-    bottom: 20px;
-    left: 4px;
-    right:4px;
-    border-radius:4px;
-    padding:8px;
-    overflow: hidden;
-    opacity:0;
-    transition: .3s;
+.textOverImage > div,
+.textOverImage:hover > h2 {
+  position: absolute;
+  background-color: black;
+  color: rgb(231, 233, 235);
+  bottom: 20px;
+  left: 4px;
+  right: 4px;
+  border-radius: 4px;
+  padding: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s;
 }
-.textOverImage input:checked + h2{
-    bottom: -20px;
-    opacity:0;
+.textOverImage input:checked + h2 {
+  bottom: -20px;
+  opacity: 0;
 }
-.textOverImage:hover > h2, .textOverImage input:checked + h2 + div {
-    bottom: 4px;
-    opacity:1;
+.textOverImage:hover > h2,
+.textOverImage input:checked + h2 + div {
+  bottom: 4px;
+  opacity: 1;
 }
-.textOverImage > h2{
-    margin:0;
+.textOverImage > h2 {
+  margin: 0;
 }
 .textOverImage input {
-    display: none;
+  display: none;
 }
-.swiper .swiper-button-prev, .swiper-button-next {
-    color: black
+.swiper .swiper-button-prev,
+.swiper-button-next {
+  color: black;
 }
-.swiper .swiper-pagination-bullet-active{
-    background:rgb(134, 0, 0)
+.swiper .swiper-pagination-bullet-active {
+  background: rgb(134, 0, 0);
 }
 .about-txt h2 {
-    font-size: 28px;
-    line-height: 2;
+  font-size: 28px;
+  line-height: 2;
 }
 .about-txt h4 {
-    font-size: 20px;
-    line-height: 1; 
-    margin: 15px 0 30px;
-    color:rgb(134, 0, 0)
+  font-size: 20px;
+  line-height: 1;
+  margin: 15px 0 30px;
+  color: rgb(134, 0, 0);
 }
 .about-txt p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 header {
-    display: flex;
-    position: relative;
-    width: 100%;
-    top: 0;
-    right: 0;
-    align-items: center;
-    z-index: 1000;
-    justify-content: space-between;
-    background: transparent;
-    padding: 20px 25%;
-    border-bottom: 1px solid transparent; 
-    transition: all .50s ease;
-} 
-@media (min-width:500px){
-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1000;
+  justify-content: space-between;
+  background: transparent;
+  padding: 20px 25%;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease;
+}
+@media (min-width: 500px) {
+  header {
     display: flex;
     position: relative;
     width: 100%;
@@ -139,202 +141,212 @@ header {
     justify-content: space-between;
     background: transparent;
     padding: 20px 2%;
-    border-bottom: 1px solid transparent; 
-    transition: all .50s ease;
-} 
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s ease;
+  }
 }
 .skills {
-    background-image: url(/img/img688.jpg);
-    position:relative;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    justify-content: flex-start;
-   
+  background-image: url(/img/img688.jpg);
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 .skills h2 {
-    position: relative;
-    margin: 0;
-    border-radius:4px;
-    padding:8px;
-    overflow-wrap: break-word;
-    font-size: 27px;
-} 
+  position: relative;
+  margin: 0;
+  border-radius: 4px;
+  padding: 8px;
+  overflow-wrap: break-word;
+  font-size: 27px;
+}
 .skills p {
-    display: inline-block;
-    padding: 10px;
-    background-color:rgba(170, 170, 174, 0.303);
-    border-radius: 10px;
-    width: 70%;
-    font-size: 16px;
-    margin-bottom: 20px;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(170, 170, 174, 0.303);
+  border-radius: 10px;
+  width: 70%;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 .skill-icons {
-    display: inline-flex;
-    width: 100%;
+  display: inline-flex;
+  width: 100%;
 }
-.home{
-    position:relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url(img/img687.jpg);
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    justify-content: flex-start;
-    display: flex;
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/img687.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
 }
 .slide {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .logo {
-    color: black;
-    font-size: 30px;
-    font-weight: 900;
-    letter-spacing: 1px;
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 .one {
-    display: inline-block;
-    margin-right: 15px;
-    height: 32px;
-    padding: 0 15px;
-    line-height: 30px;
-    font-weight: 20px;
-    font-weight: 400;
-    border-radius: 10px;
-    background:rgb(231, 233, 235);
+  display: inline-block;
+  margin-right: 15px;
+  height: 32px;
+  padding: 0 15px;
+  line-height: 30px;
+  font-weight: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  background: rgb(231, 233, 235);
 }
 .two {
-    font-size: 20px;
-    display: inline-block;
-    font-weight: 800;
+  font-size: 20px;
+  display: inline-block;
+  font-weight: 800;
 }
 .home-text h1 {
-    font-size: x-large;
-    font-weight: 600;
-    list-style: 1;
-    margin: 0 0 8px;
-    display: flex;
-    justify-content: center;
+  font-size: x-large;
+  font-weight: 600;
+  list-style: 1;
+  margin: 0 0 8px;
+  display: flex;
+  justify-content: center;
 }
 .home-text h3 {
-    font-size: 2rem;
-    font-weight: 900;
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .home-text p {
-    color:rgb(231, 233, 235);
-    font-size: 30px;
-    margin-bottom: 50px;
-    
+  color: rgb(231, 233, 235);
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 .navbar {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
 }
 .navbar a {
-    color: black;
-    font-size: 17px;
-    font-weight: 800;
-    margin: 0 10px;
-    transition: all .50s ease;
+  color: black;
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0 10px;
+  transition: all 0.5s ease;
 }
 .navbar a:hover {
-    color: rgb(134, 0, 0)
+  color: rgb(134, 0, 0);
 }
 .navbar a.current {
-    color: rgb(134, 0, 0)
+  color: rgb(134, 0, 0);
 }
 #menu-icon {
-    font-size: 35px;
-    color:black;
-    z-index: 10001;
-    cursor: pointer;
-    margin-left: 25px;
-    display: block;
+  font-size: 35px;
+  color: black;
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
 }
-@media (max-width:840px) {
-#menu-icon{
-    display: block;   
-    }
-.navbar{
-    position: absolute;
-    top:100%;
-    right:0;
+@media (max-width: 500px) {
+  #menu-icon {
+    display: block;
+    padding: 8px;
+  }
+  .navbar {
+    position: relative;
+    top: -10px;
+    right: 0;
     left: 0;
     display: flex;
     flex-direction: column;
-    background:rgb(231, 233, 235);
+    background: rgb(11, 11, 11);
     text-align: left;
-}
+    transition: all 0.45s ease;
+  }
+  .navbar a{
+    display: inline-block;
+    margin: 10px;
+    font-size: 15px;
+    transition: all 0.45s ease;
+    color: black;
+  }
+  .navbar a:hover {
+    color: rgb(134, 0, 0);
+  }
+  .navbar a.active {
+    color: rgb(134, 0, 0);
+  }
+  .navbar.open{
+    top: 100%;
+  }
 }
 span {
-    color: maroon;
+  color: maroon;
 }
-.black{
-    color: black;
+.black {
+  color: black;
 }
-section{
-    padding: 200px 15% 200px;
+section {
+  padding: 200px 15% 200px;
 }
 .navbar {
-    background:rgb(231, 233, 235);
-    border-bottom: 3px solid black;
-    padding: 10px 5%;
-   
-
+  background: rgb(231, 233, 235);
+  border-bottom: 3px solid black;
+  padding: 10px 5%;
 }
 .contact {
-    background-image: url(/img/img662.jpg);
-    position:relative;
-    height:20vh;
-    width: 200%;
-    margin-left: -102px;
-    background-size: cover;
-    background-position: center;
-    /* align-items: center; */
-    justify-content: flex-start;
+  background-image: url(/img/img662.jpg);
+  position: relative;
+  height: 20vh;
+  width: 200%;
+  margin-left: -102px;
+  background-size: cover;
+  background-position: center;
+  /* align-items: center; */
+  justify-content: flex-start;
 }
-.contact-txt{
-    position: relative;
-    margin-left: 30px;
-    /* border-radius:4px; */
-    padding:8px;
-    overflow-wrap: break-word;
-    font-size: 15px;
+.contact-txt {
+  position: relative;
+  margin-left: 30px;
+  /* border-radius:4px; */
+  padding: 8px;
+  overflow-wrap: break-word;
+  font-size: 15px;
 }
 .contact-txt h2 {
-    margin-left: 40px;
-    font-size: 30px;
+  margin-left: 40px;
+  font-size: 30px;
 }
 .end {
-    padding: 20px 15%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2em;
-    background-color: rgb(231, 233, 235);
-
+  padding: 20px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  background-color: rgb(231, 233, 235);
 }
-.bottom-txt p{
-    color: rgb(134, 0, 0);
-    font-size: 14px;
-    width: 37%;
-    margin-left: 35px;
+.bottom-txt p {
+  color: rgb(134, 0, 0);
+  font-size: 14px;
+  width: 37%;
+  margin-left: 35px;
 }
-.top i{
-    padding: 5px;
-    border-radius: 18px;
-    font-size: 20px;
-    color: rgb(231, 233, 235);
-    background: rgb(134, 0, 0);
-    margin-top: 20px;
-    margin-left: 60px;
+.top i {
+  padding: 5px;
+  border-radius: 18px;
+  font-size: 20px;
+  color: rgb(231, 233, 235);
+  background: rgb(134, 0, 0);
+  margin-top: 20px;
+  margin-left: 60px;
 }
-
-
-
