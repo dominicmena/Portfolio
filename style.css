@@ -18,7 +18,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    border-bottom: 3px solid black;
     gap: 1.5em; /* this makes the about section/div split into 2 columns */
 }
 }
@@ -166,7 +165,7 @@ header {
 .skills p {
     display: inline-block;
     padding: 10px;
-    background-color:rgb(231, 233, 235) ;
+    background-color:rgba(170, 170, 174, 0.303);
     border-radius: 10px;
     width: 70%;
     font-size: 16px;
@@ -257,7 +256,21 @@ header {
     margin-left: 25px;
     display: block;
 }
-
+@media (max-width:840px) {
+#menu-icon{
+    display: block;   
+    }
+.navbar{
+    position: absolute;
+    top:100%;
+    right:0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background:rgb(231, 233, 235);
+    text-align: left;
+}
+}
 span {
     color: maroon;
 }
@@ -297,5 +310,31 @@ section{
     margin-left: 40px;
     font-size: 30px;
 }
+.end {
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    background-color: rgb(231, 233, 235);
+
+}
+.bottom-txt p{
+    color: rgb(134, 0, 0);
+    font-size: 14px;
+    width: 37%;
+    margin-left: 35px;
+}
+.top i{
+    padding: 5px;
+    border-radius: 18px;
+    font-size: 20px;
+    color: rgb(231, 233, 235);
+    background: rgb(134, 0, 0);
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
 
 
