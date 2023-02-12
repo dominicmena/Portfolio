@@ -12,21 +12,22 @@
       href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sorts+Mill+Goudy&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
       <a href="#" class="logo">Dominic Mena</a>
     </header>
-      <ul class="navbar">
-        <li><a href="#home" class="current">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact </a></li>
-      </ul>
-    
-    
-    
+    <ul class="navbar">
+      <li><a href="#home" class="current">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact </a></li>
+    </ul>
 
     <div class="menu-box" id="menu-icon"></div>
     <section class="home" id="home">
@@ -42,17 +43,48 @@
     </section>
 
     <section class="about" id="about">
-      <div class="about-img">
-        <img src="img/IMG_3495.jpg" width="360"height="600">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/IMG_3495.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/IMG_3495.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/IMG_3495.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-btn-prev"></div>
+        <div class="swiper-btn-next"></div>
       </div>
       <div class="about-txt">
         <h2>About <span>Me</span></h2>
-        <h3>Full Stack Developer</h3>
-        <p>With a degree in Philosophy and over 5 years of business experience in the start-up<span>/</span>tech world, building and developing is second nature.</p>
+        <h4>Full Stack Developer</h4>
+        <p>
+          With a degree in Philosophy and over 5 years of business experience in
+          the start-up<span>/</span>tech world, building and developing is
+          second nature.
+        </p>
       </div>
     </section>
-    <section></section>
-    <section></section>
+
+    <section class="projects" id="projects">
+      <div class="projects-txt">
+        <h2>Projects</h2>
+      </div>
+      <div class="project-panels">
+        <div id="project-panels">
+          <ul>
+            <li><img src="1.jpg" alt="" /></li>
+            <li><img src="2.jpg" alt="" /></li>
+            <li><img src="3.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- <section></section> -->
     <footer></footer>
 
     <script
@@ -61,5 +93,28 @@
       crossorigin="anonymous"
     ></script>
     <script src="port.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        loop: true, 
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
+<!-- start with putting a section, add a class to signify the group and an id to use in scripts. name it as the description of what the section is and then divide or add divs from there and style in css -->
+
+<!-- works cited  
+for responsive pagination - https://www.youtube.com/watch?v=aRE2Zge1rUI
+https://swiperjs.com/get-started-->

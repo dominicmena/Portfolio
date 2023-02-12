@@ -12,6 +12,47 @@
     color: black;
     
 } 
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5em; /* this makes the about section/div split into 2 columns */
+}
+.about-img img{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px; /*gives the image a rounded look and sizes accordingly*/
+}
+.swiper {
+    width:80%; */
+ height: fit-content;
+}
+.swiper-slide img {
+    width: 100%;
+}
+.about-txt h2 {
+    font-size: 25px;
+    line-height: 2;
+}
+.swiper .swiper-button-prev, .swiper-button-next {
+    color: black
+}
+.swiper .swiper-pagination-bullet-active{
+    background:rgb(134, 0, 0)
+}
+.about-txt h4 {
+    font-size: 20px;
+    line-height: 1; 
+    margin: 15px 0 30px;
+    color:rgb(134, 0, 0)
+}
+.about-txt p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
 header {
     display: flex;
     position: relative;
