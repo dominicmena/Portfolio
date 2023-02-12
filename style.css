@@ -17,16 +17,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    border-bottom: 3px solid black;
     gap: 1.5em; /* this makes the about section/div split into 2 columns */
 }
 .about-img img{
-    max-width: 530px;
+    max-width: 550px;
     height: auto;
     width: 100%;
     border-radius: 8px; /*gives the image a rounded look and sizes accordingly*/
 }
 .swiper {
-    width:80%; */
+    width:100%; 
  height: fit-content;
 }
 .swiper-slide img {
@@ -35,6 +36,58 @@
 .about-txt h2 {
     font-size: 25px;
     line-height: 2;
+}
+.projects {
+    border-bottom: 10px solid black;
+    
+}
+.projects-txt h2 {
+    position: relative;
+    margin: 0;
+    border-radius:400px;
+    padding:10px;
+    font-size: 32px;
+}
+.textOverImage{
+    background-image: url(/img/lotr.jpeg);
+    width: 200px;
+    height: 200px; /* make image large enough for text to fit */
+    display: inline-block;
+    background-size: cover;
+    border-radius: 4px;
+    margin: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.textOverImage > input{
+    display: none;
+}
+.textOverImage > div, .textOverImage:hover > h2 {
+    position: absolute;
+    background-color:black;
+    color:rgb(231, 233, 235);
+    bottom: 20px;
+    left: 4px;
+    right:4px;
+    border-radius:4px;
+    padding:8px;
+    overflow: hidden;
+    opacity:0;
+    transition: .3s;
+}
+.textOverImage input:checked + h2{
+    bottom: -20px;
+    opacity:0;
+}
+.textOverImage:hover > h2, .textOverImage input:checked + h2 + div {
+    bottom: 4px;
+    opacity:1;
+}
+.textOverImage > h2{
+    margin:0;
+}
+.textOverImage input {
+    display: none;
 }
 .swiper .swiper-button-prev, .swiper-button-next {
     color: black
@@ -63,21 +116,53 @@ header {
     z-index: 1000;
     justify-content: space-between;
     background: transparent;
-    padding: 30px 10%;
+    padding: 20px 2%;
     border-bottom: 1px solid transparent; 
     transition: all .50s ease;
 } 
+.skills {
+    background-image: url(/img/img688.jpg);
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 3px solid black;
+}
+.skills h2 {
+    position: relative;
+    margin: 0;
+    border-radius:4px;
+    padding:8px;
+    overflow-wrap: break-word;
+    font-size: 27px;
+} 
+.skills p {
+    display: inline-block;
+    padding: 10px;
+    background-color:rgb(231, 233, 235) ;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.skill-icons {
+    display: inline-flex;
+    width: 100%;
+}
 .home{
     position:relative;
     height: 100vh;
     width: 100%;
-    background-image: url(img/IMG_3804.jpg);
+    background-image: url(img/img687.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
     justify-content: flex-start;
     display: flex;
-
+    border-bottom: 3px solid black;
 }
 .slide {
     margin-bottom: 20px;
@@ -162,7 +247,26 @@ section{
 .navbar {
     background:rgb(231, 233, 235);
     border-bottom: 3px solid black;
-    padding: 12px 5%;
+    padding: 10px 5%;
    
+}
+.contact {
+    background-image: url(/img/img662.jpg);
+    position:relative;
+    height:90vh;
+    width: 200%;
+    margin-left: -90px;
+    background-size: cover;
+    background-position: center;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+.contact-txt, .contact-text h3 {
+    position: relative;
+    margin: 0;
+    /* border-radius:4px; */
+    padding:8px;
+    overflow-wrap: break-word;
+    font-size: 20px;
 }
 

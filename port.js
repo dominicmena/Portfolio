@@ -12,4 +12,4 @@
 //       nextEl: '.swiper-button-next',
 //       prevEl: '.swiper-button-prev',
 //     },
-//   });
+//   error here saying Swiper is not defined - why does it work in the script in html but not here?});
