@@ -34,6 +34,12 @@
 .swiper-slide img {
   width: 100%;
 }
+.swiper-slide2 img {
+    width: 100%;
+  }
+  .swiper-slide3 img {
+    width: 100%;
+  }
 .projects {
   position: relative;
   height: 100vh;
@@ -92,13 +98,6 @@
 }
 .textOverImage input {
   display: none;
-}
-.swiper .swiper-button-prev,
-.swiper-button-next {
-  color: black;
-}
-.swiper .swiper-pagination-bullet-active {
-  background: rgb(134, 0, 0);
 }
 .about-txt h2 {
   font-size: 28px;
@@ -166,7 +165,7 @@ header {
 .skills p {
   display: inline-block;
   padding: 10px;
-  background-color: rgba(170, 170, 174, 0.303);
+  background-color: rgba(227, 227, 231, 0.418);
   border-radius: 10px;
   width: 70%;
   font-size: 16px;
@@ -307,7 +306,7 @@ section {
   background-image: url(/img/img662.jpg);
   position: relative;
   height: 20vh;
-  width: 200%;
+  width: 100%;
   margin-left: -102px;
   background-size: cover;
   background-position: center;
